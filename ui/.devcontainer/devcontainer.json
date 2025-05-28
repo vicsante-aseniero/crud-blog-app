@@ -30,6 +30,7 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
+				"Angular.ng-template",
 				"dbaeumer.vscode-eslint",
 				"ms-azuretools.vscode-docker",
 				"ms-vscode-remote.remote-containers",
