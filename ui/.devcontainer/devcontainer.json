@@ -4,7 +4,8 @@
 	"name": "Node.js & TypeScript",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
-<<<<<<< HEAD
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
 		"ghcr.io/devcontainers/features/node:1": {
 			"nodeGypDependencies": true,
@@ -16,6 +17,11 @@
 		"ghcr.io/r3dpoint/devcontainer-features/tailwindcss-standalone-cli:1": {
 			"version": "latest"
 		},
+		"ghcr.io/schlich/devcontainer-features/cypress:1": {
+			"version": "latest",
+			"installCypressDependencies": true,
+			"cypressVersion": "latest"
+		},
 		"ghcr.io/devcontainers-extra/features/jest:2": {
 			"version": "latest"
 		},
@@ -23,21 +29,6 @@
 			"version": "latest"
 		},
 		"ghcr.io/devcontainers-extra/features/typescript:2": {
-			"version": "latest"
-		}
-	},
-
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
-
-=======
-
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	"features": {
-		"ghcr.io/r3dpoint/devcontainer-features/tailwindcss-standalone-cli:1": {
-			"version": "latest"
-		},
-		"ghcr.io/devcontainers-extra/features/angular-cli:2": {
 			"version": "latest"
 		},
 		"ghcr.io/devcontainers-extra/features/zsh-plugins:0": {
@@ -47,29 +38,16 @@
 		}
 	},
 
->>>>>>> refs/remotes/origin/develop
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-<<<<<<< HEAD
-	// "postCreateCommand": "yarn install",
-=======
 	"postCreateCommand": "yarn install",
->>>>>>> refs/remotes/origin/develop
 
 	// Configure tool-specific properties.
 	"customizations": {
 		"vscode": {
 			"extensions": [
-<<<<<<< HEAD
-				"dbaeumer.vscode-eslint",
-				"ms-vscode-remote.remote-containers",
-				"ms-vscode-remote.vscode-remote-extensionpack",
-				"ms-vscode-remote.remote-wsl",
-				"ms-vscode.vscode-typescript-next",
-				"ms-azuretools.vscode-docker"
-=======
 				"Angular.ng-template",
 				"dbaeumer.vscode-eslint",
 				"ms-azuretools.vscode-docker",
@@ -77,7 +55,6 @@
 				"ms-vscode-remote.vscode-remote-extensionpack",
 				"ms-vscode-remote.remote-wsl",
 				"ms-vscode.vscode-typescript-next"
->>>>>>> refs/remotes/origin/develop
 			]
 		}
 	}
