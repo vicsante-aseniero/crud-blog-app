@@ -1,2 +1,2 @@
-# simple-crud-blog-app
-Simple CRUD Blog Test application.
+# crud blog app
+CRUD Blog application.
