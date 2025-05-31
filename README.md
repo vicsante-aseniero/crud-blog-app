@@ -1,2 +1,2 @@
-# crud blog app
+# Crud Blog App
 CRUD Blog application.
